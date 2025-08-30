@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Barreto | Software Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Franco Barreto, a software developer specializing in web applications and information systems."
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- INICIO: Formas animadas de fondo -->
+    <div class="background-shapes">
+      <img
+        src="./assets/images/shape1.svg"
+        class="scroll-bg-shape shape1"
+        alt=""
+      />
+      <img
+        src="./assets/images/shape2.svg"
+        class="scroll-bg-shape shape2"
+        alt=""
+      />
+      <img
+        src="./assets/images/shape3.svg"
+        class="scroll-bg-shape shape3"
+        alt=""
+      />
+    </div>
+    <!-- FIN: Formas animadas de fondo -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav__logo">Franco Barreto</a>
+        <ul class="nav__menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="controls">
+          <a href="../" class="language-switch">ES</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Hi, I'm Franco Barreto</h1>
+          <p class="hero__subtitle">Software Developer from Argentina</p>
+          <p class="hero__description">
+            Passionate about creating efficient and scalable technology
+            solutions. Experienced in full-stack development, systems
+            administration, and application support.
+          </p>
+          <a href="#projects" class="button">View my projects</a>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about__container">
+          <img
+            src="../assets/images/franco-profile.png"
+            alt="Photo of Franco Barreto"
+            class="about__profile-pic"
+          />
+          <div class="about__text">
+            <p>
+              My objective is to find a company that allows me to apply and
+              expand my knowledge in project planning, organization, and
+              development. I consider myself a dedicated professional with a
+              strong capacity for teamwork and a keen desire for personal and
+              professional growth.
+            </p>
+            <h3 class="skills-title">Main Skills</h3>
+            <div class="skills-grid">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Node.js</span>
+              <span>HTML & CSS</span>
+              <span>React</span>
+              <span>SQL Server</span>
+              <span>PL-SQL (Oracle)</span>
+              <span>AWS</span>
+              <span>Git & GitHub</span>
+              <span>AIX</span>
+              <span>Windows Server</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <h3 class="timeline__title">Application Developer</h3>
+            <p class="timeline__company">Libros Libertad, Argentina</p>
+            <p class="timeline__date">December 2019 - Present</p>
+            <p class="timeline__description">
+              Application and website development and maintenance. Database
+              administration and desktop app development.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3 class="timeline__title">Application Support</h3>
+            <p class="timeline__company">JP Morgan Chase & Co, Argentina</p>
+            <p class="timeline__date">April 2016 - April 2018</p>
+            <p class="timeline__description">
+              Level 1 and 3 application support.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3 class="timeline__title">
+              Application Support / Business Analyst
+            </h3>
+            <p class="timeline__company">CLOSE-UP INTERNATIONAL, Argentina</p>
+            <p class="timeline__date">March 2013 - April 2016</p>
+            <p class="timeline__description">
+              Level 1, 2, and 3 application support. SQL Server script
+              development and software project management.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3 class="timeline__title">Application Support</h3>
+            <p class="timeline__company">
+              Globant (Verizon Business Project), Argentina
+            </p>
+            <p class="timeline__date">August 2012 - March 2013</p>
+            <p class="timeline__description">
+              Level 1 and 2 application support for internal tools, reporting,
+              and administration.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="card">
+            <img
+              src="../assets/images/project-dengue.jpeg"
+              alt="Preview of DengueMapIA project"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">DengueMapIA</h3>
+              <p class="card__description">
+                A community-based early warning platform for dengue fever,
+                combining AI and citizen participation.
+              </p>
+              <a
+                href="https://github.com/francoBa/DengueMapIA"
+                target="_blank"
+                class="card__link"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/images/project-mascotas.jpeg"
+              alt="Preview of Mascotas-IA project"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Mascotas-IA</h3>
+              <p class="card__description">
+                A fun application that uses AI to generate creative names for
+                pets.
+              </p>
+              <a
+                href="https://github.com/francoBa/mascotas-IA"
+                target="_blank"
+                class="card__link"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/images/project-django.png"
+              alt="Preview of Django Airlines project"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Django Airlines Test</h3>
+              <p class="card__description">
+                A web application for airlines with a focus on testing and
+                CI/CD. Demonstrates skills in Django and DevOps.
+              </p>
+              <a
+                href="https://github.com/francoBa/djangoAirlinesTest"
+                target="_blank"
+                class="card__link"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="../assets/images/project-react.png"
+              alt="Preview of React TPI 2022 project"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">React TPI 2022</h3>
+              <p class="card__description">
+                Final integration project for the ReactJS course at
+                Informatorio, showcasing skills in modern UI development.
+              </p>
+              <a
+                href="https://github.com/francoBa/ReactTPI2022"
+                target="_blank"
+                class="card__link"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>
+          I'm always open to discussing new projects or ideas. Feel free to
+          reach out.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:franco.barreto@gmail.com" class="contact-button">
+            <img
+              src="../assets/icons/email.svg"
+              alt="Email Icon"
+              class="contact-button__icon"
+            />
+            Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/francobar"
+            target="_blank"
+            class="contact-button"
+          >
+            <img
+              src="../assets/icons/linkedin.svg"
+              alt="LinkedIn Icon"
+              class="contact-button__icon"
+            />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/francoBa"
+            target="_blank"
+            class="contact-button"
+          >
+            <img
+              src="../assets/icons/github.svg"
+              alt="GitHub Icon"
+              class="contact-button__icon"
+            />
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Franco Barreto. Designed and built with passion.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

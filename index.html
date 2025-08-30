@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franco Barreto | Desarrollador de Software</title>
+    <meta
+      name="description"
+      content="Portfolio de Franco Barreto, desarrollador de software especializado en aplicaciones web y sistemas de información."
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- INICIO: Formas animadas de fondo -->
+    <div class="background-shapes">
+      <img
+        src="./assets/images/shape1.svg"
+        class="scroll-bg-shape shape1"
+        alt=""
+      />
+      <img
+        src="./assets/images/shape2.svg"
+        class="scroll-bg-shape shape2"
+        alt=""
+      />
+      <img
+        src="./assets/images/shape3.svg"
+        class="scroll-bg-shape shape3"
+        alt=""
+      />
+    </div>
+    <!-- FIN: Formas animadas de fondo -->
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav__logo">Franco Barreto</a>
+        <ul class="nav__menu">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="controls">
+          <a href="./en/" class="language-switch">EN</a>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Cambiar tema"
+          ></button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Hola, soy Franco Barreto</h1>
+          <p class="hero__subtitle">Desarrollador de Software de Argentina</p>
+          <p class="hero__description">
+            Apasionado por crear soluciones tecnológicas eficientes y
+            escalables. Con experiencia en desarrollo full-stack, administración
+            de sistemas y soporte de aplicaciones.
+          </p>
+          <a href="#projects" class="button">Ver mis proyectos</a>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about__container">
+          <img
+            src="./assets/images/franco-profile.png"
+            alt="Foto de Franco Barreto"
+            class="about__profile-pic"
+          />
+          <div class="about__text">
+            <p>
+              Mi objetivo es encontrar una compañía que me permita aplicar y
+              expandir mis conocimientos en planificación, organización y
+              desarrollo de proyectos. Me considero un profesional dedicado, con
+              una gran capacidad para el trabajo en equipo y con un fuerte deseo
+              de crecimiento personal y profesional.
+            </p>
+            <h3 class="skills-title">Habilidades Principales</h3>
+            <div class="skills-grid">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>PHP</span>
+              <span>Node.js</span>
+              <span>HTML & CSS</span>
+              <span>React</span>
+              <span>SQL Server</span>
+              <span>PL-SQL (Oracle)</span>
+              <span>AWS</span>
+              <span>Git & GitHub</span>
+              <span>AIX</span>
+              <span>Windows Server</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <h2 class="section-title">Experiencia Profesional</h2>
+        <div class="timeline">
+          <div class="timeline__item">
+            <h3 class="timeline__title">Application Developer</h3>
+            <p class="timeline__company">Libros Libertad, Argentina</p>
+            <p class="timeline__date">Diciembre 2019 - Presente</p>
+            <p class="timeline__description">
+              Desarrollo y mantenimiento de aplicaciones y sitios web.
+              Administración de bases de datos y desarrollo de aplicaciones de
+              escritorio.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3 class="timeline__title">Application Support</h3>
+            <p class="timeline__company">JP Morgan Chase & Co, Argentina</p>
+            <p class="timeline__date">Abril 2016 - Abril 2018</p>
+            <p class="timeline__description">
+              Soporte de aplicaciones Nivel 1 y 3.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3 class="timeline__title">
+              Application Support / Business Analyst
+            </h3>
+            <p class="timeline__company">CLOSE-UP INTERNATIONAL, Argentina</p>
+            <p class="timeline__date">Marzo 2013 - Abril 2016</p>
+            <p class="timeline__description">
+              Soporte de aplicaciones Nivel 1, 2 y 3. Desarrollo de scripts en
+              SQL Server y gestión de proyectos de software.
+            </p>
+          </div>
+          <div class="timeline__item">
+            <h3 class="timeline__title">Application Support</h3>
+            <p class="timeline__company">
+              Globant (Verizon Business Project), Argentina
+            </p>
+            <p class="timeline__date">Agosto 2012 - Marzo 2013</p>
+            <p class="timeline__description">
+              Soporte de aplicaciones Nivel 1 y 2 para herramientas internas,
+              reportes y administración.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+          <div class="card">
+            <img
+              src="./assets/images/project-dengue.jpeg"
+              alt="Preview del proyecto DengueMapIA"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">DengueMapIA</h3>
+              <p class="card__description">
+                Plataforma comunitaria de alerta temprana contra el dengue que
+                combina IA y participación ciudadana.
+              </p>
+              <a
+                href="https://github.com/francoBa/DengueMapIA"
+                target="_blank"
+                class="card__link"
+                >Ver en GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/project-mascotas.jpeg"
+              alt="Preview del proyecto Mascotas-IA"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Mascotas-IA</h3>
+              <p class="card__description">
+                Una divertida aplicación que utiliza IA para generar nombres
+                creativos para mascotas.
+              </p>
+              <a
+                href="https://github.com/francoBa/mascotas-IA"
+                target="_blank"
+                class="card__link"
+                >Ver en GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/project-django.png"
+              alt="Preview del proyecto Django Airlines"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Django Airlines Test</h3>
+              <p class="card__description">
+                Aplicación web para aerolíneas con un enfoque en testing y
+                CI/CD. Demuestra habilidades en Django y DevOps.
+              </p>
+              <a
+                href="https://github.com/francoBa/djangoAirlinesTest"
+                target="_blank"
+                class="card__link"
+                >Ver en GitHub</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./assets/images/project-react.png"
+              alt="Preview del proyecto React TPI 2022"
+              class="card__image"
+            />
+            <div class="card__content">
+              <h3 class="card__title">React TPI 2022</h3>
+              <p class="card__description">
+                Proyecto integrador final para el curso de ReactJS en
+                Informatorio, mostrando habilidades en el desarrollo de
+                interfaces de usuario modernas.
+              </p>
+              <a
+                href="https://github.com/francoBa/ReactTPI2022"
+                target="_blank"
+                class="card__link"
+                >Ver en GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2 class="section-title">Contacto</h2>
+        <p>
+          Siempre estoy abierto a discutir nuevos proyectos o ideas. No dudes en
+          contactarme.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:franco.barreto@gmail.com" class="contact-button">
+            <img
+              src="./assets/icons/email.svg"
+              alt="Email Icon"
+              class="contact-button__icon"
+            />
+            Email
+          </a>
+          <a
+            href="https://www.linkedin.com/in/francobar"
+            target="_blank"
+            class="contact-button"
+          >
+            <img
+              src="./assets/icons/linkedin.svg"
+              alt="LinkedIn Icon"
+              class="contact-button__icon"
+            />
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/francoBa"
+            target="_blank"
+            class="contact-button"
+          >
+            <img
+              src="./assets/icons/github.svg"
+              alt="GitHub Icon"
+              class="contact-button__icon"
+            />
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Franco Barreto. Diseñado y construido con pasión.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
