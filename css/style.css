@@ -9,25 +9,18 @@
     var(--primary-color),
     var(--secondary-color)
   );
-
-  /* Light Theme */
   --bg-color-light: #f4f7f9;
   --text-color-light: #1a1a1a;
   --card-bg-light: #ffffff;
   --header-bg-light: rgba(255, 255, 255, 0.7);
-
-  /* Dark Theme */
   --bg-color-dark: #0d1117;
   --text-color-dark: #c9d1d9;
   --card-bg-dark: #161b22;
   --header-bg-dark: rgba(13, 17, 23, 0.7);
-
-  /* Default to Dark Theme */
   --bg-color: var(--bg-color-dark);
   --text-color: var(--text-color-dark);
   --card-bg: var(--card-bg-dark);
   --header-bg: var(--header-bg-dark);
-
   --font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
   --font-mono: 'Roboto Mono', monospace;
 }
@@ -47,11 +40,9 @@ html.light-mode {
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
@@ -69,30 +60,26 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  pointer-events: none; /* Para que no interfieran con el click */
+  pointer-events: none;
 }
-
 .scroll-bg-shape {
   position: absolute;
   opacity: 0.15;
-  transition: transform 0.5s ease-out; /* Transición suave para el movimiento */
+  transition: transform 0.5s ease-out;
 }
-
 .shape1 {
-  top: 40%;
-  left: 35%;
+  top: 45vh;
+  left: 40vw;
   width: 150px;
 }
-
 .shape2 {
-  top: 70%;
-  left: 60%;
+  top: 70vh;
+  right: 10vw;
   width: 200px;
 }
-
 .shape3 {
-  top: 55%;
-  left: 10%;
+  bottom: 15vh;
+  left: 20vw;
   width: 100px;
 }
 
@@ -109,7 +96,6 @@ body {
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
   transition: background-color 0.3s ease;
 }
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -186,14 +172,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 0 2rem;
-  max-width: 900px;
-  margin: 0 auto;
   position: relative;
   overflow: hidden;
+  padding: 0 2rem;
 }
-
+.hero__content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1s ease-out;
+}
 .hero::before,
 .hero::after {
   content: '';
@@ -242,35 +232,26 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-
-  /* Lógica del efecto de tipeo */
+  /* Contenedor para el cursor */
+  position: relative;
   display: inline-block;
-  border-right: 3px solid var(--primary-color);
-  white-space: nowrap;
-  overflow: hidden;
-  width: 24ch; /* Número de caracteres en "Hola, soy Franco Barreto" */
-  animation: typing 4s steps(24), blink 0.5s step-end infinite alternate,
-    delete 4s steps(24) 5s infinite; /* Inicia el borrado después de 5s */
+  padding-right: 5px;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
+.hero__title::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 3px;
+  background: var(--primary-color);
+  animation: blink 0.5s step-end infinite alternate;
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes delete {
-  0% {
-    width: 24ch;
-  }
-  100% {
-    width: 0;
+    background: transparent;
   }
 }
 
@@ -305,8 +286,13 @@ body {
 }
 section {
   padding: 6rem 2rem;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+.section__container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .section-title {
   font-size: clamp(2rem, 6vw, 3rem);
@@ -578,6 +564,8 @@ html:not(.light-mode) .contact-button:hover .contact-button__icon {
     transform: translateY(0);
   }
 }
+
+/* === RESPONSIVE STYLES === */
 @media (max-width: 768px) {
   .nav__menu {
     display: none;
@@ -599,5 +587,20 @@ html:not(.light-mode) .contact-button:hover .contact-button__icon {
   }
   .timeline__item::after {
     left: 10px !important;
+  }
+  .shape1 {
+    top: 10vh;
+    left: -50px;
+    width: 120px;
+    opacity: 0.1;
+  }
+  .shape2 {
+    top: 60vh;
+    right: -80px;
+    width: 150px;
+    opacity: 0.1;
+  }
+  .shape3 {
+    display: none;
   }
 }
